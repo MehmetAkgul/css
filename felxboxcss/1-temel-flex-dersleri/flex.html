@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            background-color: yellow;
+            width: 650px;
+            height: 250px;
+            display: flex;
+        }
+
+        /*
+        flex:none;
+        flex: <flex-grow>
+        flex: <flex-basis>
+        flex: <flex-grow>  <flex-basis>
+        flex: <flex-grow>  <flex-shrink>
+        flex: <flex-grow>  <flex-shrink>  <flex-basis>
+        flex: inherit;   ----> parentten miras alıyor
+        */
+
+        .box1 {
+            background-color: blue;
+            color: white;
+            flex: 1 0 0;/* <flex-grow>  <flex-shrink>  <flex-basis>       0 1 auto */
+            width: 100px;
+            height: 100px;
+        }
+
+        .box2 {
+            background-color: red;
+            color: white;
+            flex: 2 0 0;/* <flex-grow>  <flex-shrink>  <flex-basis>       0 1 auto */
+            width: 100px;
+            height: 100px;
+        }
+
+        .box3 {
+            background-color: green;
+            color: white;
+            flex: 3 0 0;/* <flex-grow>  <flex-shrink>  <flex-basis>       0 1 auto */
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box1">box-1</div>
+    <div class="box2">box-2</div>
+    <div class="box3">box-3</div>
+</div>
+</body>
+</html>
